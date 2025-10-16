@@ -1,0 +1,132 @@
+{
+  "version": "0.1.0",
+  "purpose": "Define prompts for generating role one-pagers and trial project packets for makerspace recruitment.",
+  "roles": [
+    {
+      "id": "operations_lead",
+      "title": "Operations Lead",
+      "onePager": {
+        "sections": [
+          "Role Summary",
+          "Key Responsibilities",
+          "Success Metrics",
+          "Time Commitment",
+          "Collaboration Touchpoints"
+        ]
+      },
+      "trialProject": {
+        "brief": "Draft a 90-day operations stabilization plan covering permits, vendor onboarding, and tool maintenance cadence.",
+        "deliverables": [
+          "Permit readiness checklist",
+          "Vendor contact matrix",
+          "Weekly maintenance calendar"
+        ]
+      }
+    },
+    {
+      "id": "programs_lead",
+      "title": "Programs Lead",
+      "onePager": {
+        "sections": [
+          "Role Summary",
+          "Signature Programs",
+          "Participant Outcomes",
+          "Required Experience",
+          "Support Resources"
+        ]
+      },
+      "trialProject": {
+        "brief": "Design a two-week STEAM sprint culminating in a community showcase.",
+        "deliverables": [
+          "Session outline",
+          "Materials budget",
+          "Participant recruitment plan"
+        ]
+      }
+    },
+    {
+      "id": "finance_admin_lead",
+      "title": "Finance & Admin Lead",
+      "onePager": {
+        "sections": [
+          "Role Summary",
+          "Financial Systems",
+          "Reporting Cadence",
+          "Risk Controls",
+          "Collaboration Partners"
+        ]
+      },
+      "trialProject": {
+        "brief": "Build a cash flow model aligned with the 12-month budget and identify key compliance deadlines.",
+        "deliverables": [
+          "Cash flow projection",
+          "Compliance deadline calendar",
+          "Grant reporting checklist"
+        ]
+      }
+    },
+    {
+      "id": "fabrication_safety_lead",
+      "title": "Fabrication & Safety Lead",
+      "onePager": {
+        "sections": [
+          "Role Summary",
+          "Shop Zones",
+          "Safety Protocols",
+          "Training Pathways",
+          "Maintenance Expectations"
+        ]
+      },
+      "trialProject": {
+        "brief": "Create a tool certification flow for three flagship tools including assessment criteria.",
+        "deliverables": [
+          "Certification ladder diagram",
+          "Assessment rubrics",
+          "Incident response quick reference"
+        ]
+      }
+    },
+    {
+      "id": "communications_outreach_lead",
+      "title": "Communications & Outreach Lead",
+      "onePager": {
+        "sections": [
+          "Role Summary",
+          "Narrative Pillars",
+          "Audience Segments",
+          "Channels & Tools",
+          "Impact Metrics"
+        ]
+      },
+      "trialProject": {
+        "brief": "Draft a 60-day outreach campaign combining email, social, and community events.",
+        "deliverables": [
+          "Campaign calendar",
+          "Messaging toolkit",
+          "Event activation checklist"
+        ]
+      }
+    },
+    {
+      "id": "vision_partnerships_chair",
+      "title": "Vision & Partnerships Chair",
+      "onePager": {
+        "sections": [
+          "Role Summary",
+          "Strategic Outcomes",
+          "Partnership Targets",
+          "Governance Interface",
+          "Time Horizon"
+        ]
+      },
+      "trialProject": {
+        "brief": "Develop a partnership map highlighting top ten anchor partners and engagement strategies.",
+        "deliverables": [
+          "Partner segmentation grid",
+          "Engagement sequencing plan",
+          "Board reporting snapshot"
+        ]
+      }
+    }
+  ]
+}
