@@ -1,0 +1,20 @@
+{
+  "version": "0.1.0",
+  "lastReviewed": "2024-06-01",
+  "owner": "people-ops",
+  "description": "Generate standardized role one-pagers and trial project briefs for core makerspace leadership positions.",
+  "tasks": [
+    {
+      "id": "role_one_pager",
+      "inputs": ["roleName", "missionFit", "coreDuties", "kpis", "collaborators", "timeCommitment"],
+      "output": "markdown",
+      "template": "---\nversion: 0.1.0\nlastReviewed: {{today}}\nowner: {{roleOwner}}\n---\n\n# {{roleName}} One-Pager\n\n## Purpose\nSummarize how the {{roleName}} advances the makerspace mission.\n\n## Mission Fit\n{{missionFit}}\n\n## Core Duties\n{{coreDuties}}\n\n## Key KPIs\n{{kpis}}\n\n## Collaboration\n{{collaborators}}\n\n## Time Commitment\n{{timeCommitment}}\n"
+    },
+    {
+      "id": "trial_project_brief",
+      "inputs": ["roleName", "projectTitle", "objectives", "deliverables", "timeline", "support"],
+      "output": "markdown",
+      "template": "---\nversion: 0.1.0\nlastReviewed: {{today}}\nowner: {{roleOwner}}\n---\n\n# {{projectTitle}} Trial Project\n\n## Role Context\nDesigned for the {{roleName}} recruitment pipeline.\n\n## Objectives\n{{objectives}}\n\n## Deliverables\n{{deliverables}}\n\n## Timeline\n{{timeline}}\n\n## Available Support\n{{support}}\n"
+    }
+  ]
+}

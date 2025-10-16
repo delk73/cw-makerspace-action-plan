@@ -1,0 +1,59 @@
+{
+  "version": "0.1.0",
+  "lastReviewed": "2024-06-01",
+  "owner": "steering-committee",
+  "objective": "Create the base directory skeleton and documentation templates for the makerspace initiative, covering governance, roles, outreach, facilities, and funding integration.",
+  "structure": {
+    "docs/": {
+      "README.md": "High-level project overview: mission, context, and current phase summary.",
+      "ACTION_PLAN.md": "Authoritative plan aligning personal fit, community fit, and operations (from Oct 2025 synthesis).",
+      "TEAM_FRAMEWORK.md": "Detailed role descriptions, KPIs, and recruitment pipeline (Operations, Programs, Finance, Fab/Safety, Comms, Vision).",
+      "FOOD_MODEL.md": "Rationale and plan for food-truck integration, health code simplification, and outdoor commons design.",
+      "OUTREACH/": {
+        "DANIELLE_STRACHMAN_EMAIL.md": "Funding intro email template for Danielle Strachman / 1517 Fund.",
+        "RECRUITMENT_TEMPLATES.md": "DM/email templates for each role; intake form link placeholder."
+      },
+      "GOVERNANCE/": {
+        "BYLAWS_TEMPLATE.md": "Board composition, officer roles, term limits, COI policy outline.",
+        "POLICIES.md": "Safety, inclusion, volunteer agreements, and Code of Conduct stubs."
+      },
+      "FACILITY_PLAN.md": "Zoning, space plan, power/water/ventilation notes, food-truck pad interface.",
+      "BUDGET.md": "12-month startup budget and sample grant table (CapEx, OpEx, Revenue, Grants)."
+    },
+    "meta/": {
+      "prompt/": {
+        "repo_spec.json": "Canonical specification file containing this structure and objective.",
+        "recruitment_spec.json": "Task definitions for Codex to generate role one-pagers and trial packets."
+      },
+      "output/": {}
+    },
+    "ops/": {
+      "PERMIT_MATRIX.md": "Placeholder to track permits, safety inspections, insurance, and CO milestones.",
+      "TASKS_TODO.md": "Rolling operational backlog."
+    },
+    "programs/": {
+      "WORKSHOP_TEMPLATES/": {
+        "STEAM_Intro_Workshop.md": "Example 2-hour workshop outline.",
+        "Tool_Safety_101.md": "Example SOP-driven training module."
+      }
+    },
+    "funding/": {
+      "GRANTS_PIPELINE.md": "List of active and planned grants (CWC Chest, 1517 Fund, etc).",
+      "DONOR_TEMPLATES.md": "Sponsorship one-pagers and outreach copy."
+    }
+  },
+  "constraints": {
+    "style": "deterministic, minimal dependencies, markdown-only seed docs",
+    "rules": [
+      "Use relative paths only.",
+      "Every doc must have YAML front matter (version, lastReviewed, owner).",
+      "No unscoped content; each file must have clear purpose statement.",
+      "Emit markdown and json only, no binary assets."
+    ]
+  },
+  "exit_criteria": [
+    "Repo initializes cleanly with deterministic directory structure.",
+    "Each major domain (docs, meta, ops, programs, funding) contains at least one stub document.",
+    "Codex can generate one level deeper (role one-pagers) from recruitment_spec.json."
+  ]
+}
