@@ -1,0 +1,7 @@
+# .github/CODEOWNERS
+# Require review from either maintainer on any change
+
+*       @delk73 @karinekirk
+.github/ @delk73
+scripts/ @delk73
+docs/    @karinekirk
