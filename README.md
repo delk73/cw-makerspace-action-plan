@@ -11,9 +11,9 @@ This smoke plan defines the **6–8 week pilot** to test fit, surface friction e
 
 ---
 
-## 🌱 Mission & Ethos
+## Mission & Ethos
 To establish a **community-driven fabrication and learning space** that integrates technical skill-building, art, and systems thinking.  
-Our guiding values remain: total accessibility, transparency, safety, and local partnership — caring equally for people, tools, and the shared space.
+Our guiding values remain: total accessibility, transparency, safety, and local partnership — caring for people, tools, and the shared space.
 
 ---
 
