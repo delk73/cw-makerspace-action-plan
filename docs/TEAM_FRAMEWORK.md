@@ -53,4 +53,4 @@ owner: "People & Culture"
 ## Tooling and Documentation Links
 - Role one-pagers and trial packets generated from `meta/prompt/recruitment_spec.json`.
 - Operational backlog tracked in `ops/TASKS_TODO.md` with cross-links to program pilots.
-- Governance reference materials located in `docs/GOVERNANCE/`.
+- Governance reference materials located in `docs/governance/`.
