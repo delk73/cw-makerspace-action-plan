@@ -11,9 +11,9 @@ owner: kk
 
 | # | Friction Point | Category *(Ops / Legal / Human / Financial / Technical)* | Description / Evidence | Fixability *(Low = structural, High = tactical)* | Quick Fix Option | Long-Term Strategy | Decision / Owner | Linked Issues / Docs |
 |---|----------------|------------------------------------------------------------|------------------------|-----------------------------------------------|------------------|--------------------|------------------|----------------------|
-| 1 | Example: Zoning ambiguity on light fabrication | Legal | City planning flagged unclear “office use.” | ⚠️ Low | Apply for temporary occupancy variance | Relocate or lobby for mixed-use inclusion | Alex | #ZON-01 |
-| 2 | Example: Volunteers inconsistent | Human | 4/10 confirmed no-shows for setup weekend | 🟡 Medium | Add shifts + incentives | Hire part-time ops lead | Jamie | #OPS-03 |
-| 3 | Example: HVAC inadequate for soldering area | Technical | Airflow < spec; heat buildup | 🔴 High | Add portable fan units | Budget retrofit in Q2 | Pat | #FAC-02 |
+| 1 | Example: Zoning ambiguity on light fabrication | Legal | City planning flagged unclear “office use.” | ⚠️ Low | Apply for temporary occupancy variance | Relocate or lobby for mixed-use inclusion | Dan | #ZON-01 |
+| 2 | Example: Volunteers inconsistent | Human | 4/10 confirmed no-shows for setup weekend | 🟡 Medium | Add shifts + incentives | Hire part-time ops lead | Karin | #OPS-03 |
+| 3 | Example: HVAC inadequate for soldering area | Technical | Airflow < spec; heat buildup | 🔴 High | Add portable fan units | Budget retrofit in Q2 | Dan | #FAC-02 |
 | 4 |  |  |  |  |  |  |  |  |
 | 5 |  |  |  |  |  |  |  |  |
 
