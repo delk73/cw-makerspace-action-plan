@@ -1,0 +1,16 @@
+# .github/MAINTAINERS.yml
+version: 1
+lastUpdated: 2025-10-17
+
+maintainers:
+  - handle: delk73
+    name: Dan E.
+    role: Co-Maintainer
+    permissions: admin
+    github: https://github.com/delk73
+
+  - handle: karinekirk
+    name: Karin K.
+    role: Co-Maintainer
+    permissions: admin
+    github: https://github.com/karinekirk
