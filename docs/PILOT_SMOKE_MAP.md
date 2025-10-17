@@ -1,6 +1,6 @@
 ---
 title: Makerspace Smoke Map
-version: draft-0.2
+version: 0.1.0
 lastReviewed: 2025-10-16
 pilotPhase: "Smoke Test"
 owner: kk
