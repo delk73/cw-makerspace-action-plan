@@ -4,15 +4,15 @@ lastReviewed: 2025-02-14
 owner: "Funding Outreach"
 ---
 
-# Danielle Strachman / 1517 Fund Intro Email
+# ACME Intro Email
 
-**Purpose:** Provide a reusable email template for initiating funding conversations with Danielle Strachman and the 1517 Fund.
+**Purpose:** Provide a reusable email template for initiating funding conversations with ACME.
 
 ## Email Template
 ```
 Subject: Camas–Washougal Makerspace — Catalyzing Youth Builders in the Gorge
 
-Hi Danielle,
+Hi ACME,
 
 I hope you are doing well. I lead the Camas–Washougal Makerspace initiative, and our team is building a nonprofit hub where young builders, educators, and founders can collaborate on hardware, biotech, and creative fabrication projects.
 
