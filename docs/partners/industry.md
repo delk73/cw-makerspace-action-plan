@@ -1,7 +1,8 @@
 ---
 category: Industry
-version: v0.1
+version: 0.1.0
 lastUpdated: 2025-10-18
+lastReviewed: '2025-10-18'
 ---
 
 # Industry Partners
