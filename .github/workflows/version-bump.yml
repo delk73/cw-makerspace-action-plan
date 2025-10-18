@@ -1,0 +1,38 @@
+name: Doc Version Auto-Bump (CI)
+
+on:
+  pull_request:
+  push:
+
+permissions:
+  contents: write
+
+jobs:
+  bump-doc-versions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Fetch base
+        run: |
+          git fetch origin +refs/heads/main:refs/remotes/origin/main
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install deps
+        run: pip install pyyaml
+      - name: Run CI bump
+        run: python scripts/ci_bump_doc_versions.py
+      - name: Commit and push bump (if any)
+        run: |
+          if ! git diff --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "ci: normalize doc versions"
+            git push
+          else
+            echo "No changes to commit."
+          fi
