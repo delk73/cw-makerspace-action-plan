@@ -1,69 +1,68 @@
 ---
-version: 0.1.2
-lastReviewed: '2025-10-18'
-owner: kk
+version: 0.1.0
+lastReviewed: 'YYYY-MM-DD'
+owner: <initials>
 ---
 
-# 🧭 Running Meeting Agenda
-
-_Last updated: 2025-10-17_
-
----
-
-## 🌟 Upcoming Meeting — October 17, 2025
-
-### Attendees
-- [ ] Karin Kirk
-- [ ] Dan Elkins
-
-### Agenda
-1. Review outcomes from 10/16 meeting  
-2. Status check on action items (food references cleanup, outreach letter, agenda in repo)  
-3. Whiteboard options for immediate items (quick pick)  
-4. Confirm cadence: daily AM check-in / PM meeting  
-5. Plan weekend site recon + confirm facility requirements (see `FACILITY-PLAN.md`)  
-6. Next steps and assignments  
-
-### Notes (To Fill During Meeting)
-- [ ]  
-- [ ]  
-
-### Action Items (Assign Tonight)
-- [ ]  
-- [ ]  
+# 🧭 Makerspace Operations Meeting  
+**Date:** YYYY-MM-DD  
+**Location:** <Meeting Location or “Remote”>  
+**Attendees:** <List initials and names, e.g., Karin Kirk (KK), Dan Elkins (DE)>
 
 ---
 
-## 📅 Past Meetings
+## 1. Purpose
 
-### October 16, 2025
+<Briefly describe the objective or focus of this meeting.>  
+Example: “Review operational progress, align on task ownership, and define next-phase deliverables.”
 
-**Attendees:**  
-- Dan Elkins  
-- Karin Kirk  
+---
 
-**Summary:**  
-Reviewed morning conversation and confirmed key collaboration rhythms and tools.
+## 2. Old Business
 
-**Decisions & Agreements:**  
-- Daily **morning check-in** to touch base on action items for the day.  
-- Daily **evening meeting** with an agenda for wrap-up and planning.  
-- Need a **visual whiteboard** for immediate and high-priority items.  
-- **GitHub Projects** will serve as project manager (Karin to set up) — currently **on hold** to keep workflow simple.  
-- Discussed upgrading GitHub to **Enterprise** — on hold for now.  
-- **Slack** will be used for daily communication, with key items pulled into the GitHub repo as needed.
+### 2.1 <Topic / Initiative Name>
+- **Status:** <Open / In Progress / Complete>  
+  - <Summary of previous progress and any new updates.>  
+  - <Next step or outstanding dependency.>
 
-**New Items:**  
-- Dan added `smokemap.md` — to be used for triaging any friction points.  
-- Need to review all repo content for **references to food** and remove them — on-site food will not be provided.  
-- **Site recon** planned for this weekend — identify potential sites.  
-  - Refer to `FACILITY-PLAN.md` for site requirements.  
+### 2.2 <Topic / Initiative Name>
+- **Status:** <Open / In Progress / Complete>  
+  - <Summary of updates.>  
+  - <Assigned owner and timeline.>
 
-**Action Items (Before Next Meeting):**  
-| Task | Owner | Status |
-|------|--------|--------|
-| Learn about GitHub Projects setup | Karin | ⏸️ On Hold |
-| Find and remove food references from repo | Karin | 🕓 Not Started |
-| Enter this agenda into repo | Karin | 🕓 Not Started |
-| Draft outreach letter | Dan | 🕓 Not Started |
-| Add outreach letter to agenda | Dan | 🕓 Not Started |
+---
+
+## 3. New Business
+
+### 3.1 <Topic / Decision Area>
+- <Concise description of the new business item or discussion.>  
+- <Owner / Responsible party>  
+- <Next step or decision timeline.>
+
+### 3.2 <Topic / Decision Area>
+- <Concise description.>  
+- <Owner / Responsible party>  
+
+---
+
+## 4. Action Register
+
+| ID | Task | Owner | Due | Status | Notes |
+|----|------|--------|------|--------|-------|
+| A-### | <Action Description> | <Initials> | <YYYY-MM-DD> | <Open / Planned / Complete> | <Notes> |
+| A-### | <Action Description> | <Initials> | <YYYY-MM-DD> | <Open / Planned / Complete> | <Notes> |
+
+---
+
+## 5. Summary of Decisions
+
+- <Decision 1>  
+- <Decision 2>  
+- <Decision 3>
+
+---
+
+**Document Owner:** <Full Name> (`<initials>`)  
+**Task-To:**  
+This update adds the <YYYY-MM-DD> operational meeting record in `management/meeting_agenda.md`.  
+Version metadata and CI conventions preserved.
