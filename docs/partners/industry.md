@@ -1,6 +1,6 @@
 ---
 category: Industry
-version: 0.1.0
+version: 0.1.1
 lastUpdated: 2025-10-18
 lastReviewed: '2025-10-18'
 ---
