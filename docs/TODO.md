@@ -83,9 +83,8 @@
 
 ## 5. Removed / Deferred Scope
 
-* ❌ **Food Model** — cut for agility; revisit in post-launch community phase
+* ❌ **Concession Model** — cut for agility;
 * ❌ Deep OPEX/Revenue modeling — postpone until core funding secured
-* ❌ Full multi-phase café model — not in pilot scope
 
 ---
 
