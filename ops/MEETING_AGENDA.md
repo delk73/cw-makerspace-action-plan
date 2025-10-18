@@ -9,61 +9,68 @@ owner: kk
 _Last updated: 2025-10-17_
 
 ---
+## 🗓️ Meeting — October 18, 2025
 
-## 🌟 Upcoming Meeting — October 17, 2025
+### Carryover Action Items
+1. Review and remove food-related references from repo. - *In Progress*
+2. Begin whiteboard setup over weekend.  - *Planned*
+3. Conduct site reconnaissance and capture findings in `FACILITY-PLAN.md`. - *Planned*
+ 
+### New Agenda Items
+1. add new item here
 
-### Attendees
-- [ ] Karin Kirk
-- [ ] Dan Elkins
+### Decisions
+- Pull requests to include Review step before Commit
 
-### Agenda
-1. Review outcomes from 10/16 meeting  
-2. Status check on action items (food references cleanup, outreach letter, agenda in repo)  
-3. Whiteboard options for immediate items (quick pick)  
-4. Confirm cadence: daily AM check-in / PM meeting  
-5. Plan weekend site recon + confirm facility requirements (see `FACILITY-PLAN.md`)  
-6. Next steps and assignments  
 
-### Notes (To Fill During Meeting)
-- [ ]  
-- [ ]  
 
-### Action Items (Assign Tonight)
-- [ ]  
-- [ ]  
+---
+## 🗓️ Meeting — October 17, 2025
+
+### Carryover Action Items
+1. Review and remove food-related references from repo. - *In Progress*
+2. Enter meeting agenda into repo.  - *DONE*
+3. Draft outreach letter.  - *DONE*
+4. Begin whiteboard setup over weekend.  - *Planned*
+5. Conduct site reconnaissance and capture findings in `FACILITY-PLAN.md`. - *Planned*
+ 
+### New Agenda Items
+none
+
+### Decisions
+- Pull requests to include Review step before Commit
+
 
 ---
 
-## 📅 Past Meetings
 
-### October 16, 2025
+## 🌟 Meeting — October 16, 2025 (Kickoff)
 
-**Attendees:**  
-- Dan Elkins  
-- Karin Kirk  
+### Agenda
+1. Current repo structure and collaboration setup  
+2. Assigning key responsibilities  
+3. Scheduling and communication cadence  
+4. Open discussion / next steps  
 
-**Summary:**  
-Reviewed morning conversation and confirmed key collaboration rhythms and tools.
+### Decisions
+- Daily AM check-ins and PM wrap-up meetings confirmed.  
+- Slack will be used for daily communication; items can be pulled into the repo.  
+- GitHub Projects will serve as project manager (on hold for now).  
+- Enterprise upgrade discussed — deferred to keep workflow simple.  
+- Need a shared visual whiteboard for immediate priorities.  
+- Added `smokemap.md` to triage friction points.  
+- All food-related references in repo to be reviewed and removed.  
+- Site reconnaissance planned for weekend; see `FACILITY-PLAN.md` for criteria.
 
-**Decisions & Agreements:**  
-- Daily **morning check-in** to touch base on action items for the day.  
-- Daily **evening meeting** with an agenda for wrap-up and planning.  
-- Need a **visual whiteboard** for immediate and high-priority items.  
-- **GitHub Projects** will serve as project manager (Karin to set up) — currently **on hold** to keep workflow simple.  
-- Discussed upgrading GitHub to **Enterprise** — on hold for now.  
-- **Slack** will be used for daily communication, with key items pulled into the GitHub repo as needed.
+### Action Items
+1. Review and remove food-related references from repo.  
+2. Enter meeting agenda into repo.  
+3. Draft outreach letter and add to repo.  
+4. Begin whiteboard setup over weekend.  
+5. Conduct site reconnaissance and capture findings in `FACILITY-PLAN.md`.
+ 
 
-**New Items:**  
-- Dan added `smokemap.md` — to be used for triaging any friction points.  
-- Need to review all repo content for **references to food** and remove them — on-site food will not be provided.  
-- **Site recon** planned for this weekend — identify potential sites.  
-  - Refer to `FACILITY-PLAN.md` for site requirements.  
+---
 
-**Action Items (Before Next Meeting):**  
-| Task | Owner | Status |
-|------|--------|--------|
-| Learn about GitHub Projects setup | Karin | ⏸️ On Hold |
-| Find and remove food references from repo | Karin | 🕓 Not Started |
-| Enter this agenda into repo | Karin | 🕓 Not Started |
-| Draft outreach letter | Dan | 🕓 Not Started |
-| Add outreach letter to agenda | Dan | 🕓 Not Started |
+
+
