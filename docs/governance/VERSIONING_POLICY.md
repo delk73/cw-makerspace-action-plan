@@ -1,13 +1,13 @@
 ---
 version: 0.1.0
-lastReviewed: 2025-10-17
+lastReviewed: '2025-10-18'
 owner: de
 ---
 
 # 🧭 Makerspace Repository Versioning Policy
 
 All Markdown documents in this repository are **governed**, not manually versioned.  
-Document metadata (`version`, `lastReviewed`) ensures consistency across the project through automated validation and explicit human review signals.
+Document metadata (`version`, `lastReviewed`) is normalized by CI after merge to the `main` branch.
 
 ---
 
@@ -16,30 +16,29 @@ Document metadata (`version`, `lastReviewed`) ensures consistency across the pro
 | Field | Source | Description |
 |-------|---------|-------------|
 | **`repoVersion`** | `version.json` | Defines the current repository phase (e.g., `0.1` for *Smoke Test*). |
-| **`version`** | YAML front matter of each doc | Immutable, auto-managed patch version (e.g., `0.1.2`). Bumped automatically on material content change. Never edited manually. |
-| **`lastReviewed`** | YAML front matter of each doc | The only manually editable metadata field. Used to mark a human review when content itself is unchanged. |
+| **`version`** | YAML front matter of each doc | Auto-managed patch version (e.g., `0.1.2`). Incremented automatically on material content change when merged into `main`. |
+| **`lastReviewed`** | YAML front matter of each doc | Automatically set to the merge date when the document is normalized by CI. |
 
 The prefix (e.g., `0.1`) is immutable within a phase.  
 All documents share that prefix.  
-`version` progression and enforcement are handled exclusively by repository tooling.
+Version progression and enforcement occur exclusively on the `main` branch via CI automation.
 
 ---
 
 ## 2. Enforcement Rules
 
-- Manual edits to **`version`** cause CI to **fail the build**.  
-- Manual edits to **`lastReviewed`** are **permitted and encouraged**.  
+- Manual edits to **`version`** are ignored and overwritten by CI.  
+- **`lastReviewed`** is updated automatically during CI normalization.  
 - CI checks all `.md` files for:
-  - Non-semantic versions (`draft-*`, `v0.1.0`, etc.)
-  - Prefix drift (`0.0.x` vs `0.1.x`)
-  - Missing or malformed version metadata  
+  - Non-semantic or malformed versions  
+  - Prefix drift (e.g., `0.0.x` vs `0.1.x`)  
+  - Missing front-matter metadata  
 
-If drift is detected, CI halts with:
+If any corrections are needed, CI commits them automatically with:
 
 ```
 
-Immutable version prefix: 0.1.x
-❌ Drift detected — one or more docs contain user-edited or non-semantic version tags.
+ci: normalize doc versions
 
 ```
 
@@ -47,67 +46,59 @@ Immutable version prefix: 0.1.x
 
 ## 3. Version & Review Responsibilities
 
-| Field | Who Controls | When It Changes | Purpose |
-|--------|--------------|----------------|----------|
-| **`version`** | Automation | On material body edits (below front matter) | Tracks canonical document evolution |
-| **`lastReviewed`** | Human | On manual validation or audit | Tracks date a human verified content accuracy |
+| Field | Controlled By | When It Changes | Purpose |
+|--------|----------------|----------------|----------|
+| **`version`** | CI (`scripts/ci_bump_doc_versions.py`) | When a document body changes and the commit is merged to `main` | Tracks canonical evolution of documentation |
+| **`lastReviewed`** | CI | On every normalization commit to `main` | Reflects the most recent verified state |
 
 ### 🧩 `version`
-- Managed entirely by repository tooling.
-- Increments automatically when body text changes.
-- Never edited manually or incremented by hand.
+- Managed only after merge into `main`.  
+- Incremented automatically based on content changes.  
+- Never edited manually or in pull requests.
 
 ### 🕓 `lastReviewed`
-- Safe to update manually when confirming a doc remains accurate.  
-- Does **not** trigger a `version` bump or CI failure.  
-- Example workflow:
-
-```yaml
-lastReviewed: 2025-10-17
-```
-
-```bash
-git add docs/NAME.md
-git commit -m "docs: mark reviewed (no content change)"
-```
+- Automatically set to the current date when CI normalizes metadata.  
+- No manual updates required.
 
 ---
 
-## 4. Local Normalization
+## 4. Local Development
 
-Before committing or pushing, maintainers can align metadata locally:
-
-```bash
-# Preview (detects drift, exits 1 if found)
-python scripts/bump_doc_versions.py --dry-run
-
-# Apply normalization (auto-fixes version prefixes and patch numbers)
-python scripts/bump_doc_versions.py
-```
-
-This ensures all Markdown files remain synchronized with the immutable `repoVersion` prefix.
+Local normalization scripts and manual version updates are **deprecated**.  
+Developers **do not run versioning locally**.  
+CI performs all enforcement once commits reach `main`.
 
 ---
 
 ## 5. CI Integration
 
-The workflow `.github/workflows/version-guard.yml` runs on every push or pull request:
+The workflow `.github/workflows/version-bump.yml` enforces version consistency for all Markdown documents.
 
-* Executes `bump_doc_versions.py --dry-run`
-* Fails if **version drift** or non-semantic tags are detected
-* Allows manual `lastReviewed` edits
-* Prints the governed version prefix (`repoVersion`) for transparency
+### Behavior Summary
+- Triggered only on `push` to `main`
+- Executes `scripts/ci_bump_doc_versions.py`
+- Detects Markdown changes relative to the previous commit on `main`
+- Bumps `version` and updates `lastReviewed` as needed
+- Commits and pushes changes automatically under the bot identity
+- Ensures all documents conform to the immutable `repoVersion` prefix
+
+### Example CI Log Output
+```
+
+✅ Bumped versions:
+★ docs/governance/VERSIONING_POLICY.md: 0.1.0 → 0.1.1
+
+```
 
 ---
 
 ## 6. Governance Principle
 
-> **Version metadata is canonical infrastructure, not author content.**
-> Authors and reviewers focus on substance and correctness.
-> CI and automation maintain chronology, integrity, and version consistency.
+> **Version metadata is canonical infrastructure, not author content.**  
+> Authors focus on substance; CI maintains version integrity and chronology on `main`.
 
 ---
 
-**Maintainer:** de
-**Script:** `scripts/bump_doc_versions.py`
-**Workflow:** `.github/workflows/version-guard.yml`
+**Maintainer:** de  
+**Script:** `scripts/ci_bump_doc_versions.py`  
+**Workflow:** `.github/workflows/version-bump.yml`
