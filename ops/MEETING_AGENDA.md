@@ -17,10 +17,10 @@ _Last updated: 2025-10-17_
 3. Conduct site reconnaissance and capture findings in `FACILITY-PLAN.md`. - *Planned*
  
 ### New Agenda Items
-1. add new item here
+1. Review WHITEBOARD.md
 
 ### Decisions
-- Pull requests to include Review step before Commit
+- 
 
 
 

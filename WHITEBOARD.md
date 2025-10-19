@@ -1,6 +1,10 @@
-# 🧭 TODO
+---
+version: 0.1.0
+lastReviewed: 2025-10-18
+owner: kk
+---
 
-*(v2025-10-18 · excluding food model)*
+# 🧭 TODO
 
 ## 1. Structural Audit — Repo Organization & CI
 
