@@ -15,7 +15,7 @@ Document metadata (`version`, `lastReviewed`) is normalized by CI after merge to
 
 | Field | Source | Description |
 |-------|---------|-------------|
-| **`repoVersion`** | `version.json` | Defines the current repository phase (e.g., `0.1` for *Smoke Test*). |
+| **`repoVersion`** | `version.json` | Defines the current repository phase (e.g., `0.1`). |
 | **`version`** | YAML front matter of each doc | Auto-managed patch version (e.g., `0.1.2`). Incremented automatically on material content change when merged into `main`. |
 | **`lastReviewed`** | YAML front matter of each doc | Automatically set to the merge date when the document is normalized by CI. |
 
