@@ -1,6 +1,6 @@
 ---
-version: 0.1.1
-lastReviewed: '2025-10-18'
+version: 0.1.2
+lastReviewed: '2025-10-22'
 owner: de
 ---
 
