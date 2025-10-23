@@ -1,7 +1,8 @@
 ---
-version: 0.1.0
+version: 0.1.1
 lastUpdated: 2025-10-23
 category: Partner Directory (Comprehensive)
+lastReviewed: '2025-10-23'
 ---
 
 # Camas–Washougal Makerspace — Partner Directory (Unified · Comprehensive · Sorted by Priority)
