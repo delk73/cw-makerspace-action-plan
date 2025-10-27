@@ -32,7 +32,7 @@ Captures meetings, decisions, friction points, and next actions as you and Dan v
 | # | Friction Point | Category | Description / Evidence | Fixability | Quick Fix | Long-Term Strategy | Owner |
 |---|----------------|-----------|------------------------|-------------|------------|--------------------|--------|
 | 1 | **No physical site yet** | Ops / Legal | Site scouting begun; no confirmed location or zoning details. | ⚠️ Low | Tour shortlist & city pre-app chat | Add criteria & shortlist to `FACILITY_PLAN.md` | Dan |
-| 2 | **Tool storage & readiness** | Ops / Technical | Tools stored at home; no inventory or plan yet. | 🟡 Medium | Create tool list + condition log | Set up shared inventory system | Karin |
+| 2 | **Tool storage & readiness** | Ops / Technical | No inventory or plan yet. | 🟡 Medium | Create tool list + condition log | Set up shared inventory system | Karin |
 | 3 | **No insurance coverage** | Financial / Legal | No fiscal sponsor or policy in place. | ⚠️ Low | Research insurance requirements | Secure sponsorship or liability policy | Dan |
 | 4 | **Clarifying roles and communication** | Human | Karin establishing update rhythm and task scope. | 🟡 Medium | Set weekly check-in + task notes | Add simple onboarding SOP | Karin |
 | 5 | **Outreach not started** | Ops / Community | Targets listed; no initial contact made. | 🟡 Medium | Draft intro email + contact list | Build engagement pipeline | Karin |
