@@ -1,6 +1,6 @@
 ---
-version: 0.1.0
-lastReviewed: 2025-11-11
+version: 0.1.1
+lastReviewed: '2025-11-11'
 owner: kk
 category: Partner Outreach Brief
 template: true
