@@ -4,10 +4,17 @@ lastReviewed: '2025-10-27'
 owner: kk
 ---
 
-# 🧭 Camas–Washougal Makerspace · Pilot Log
+# 🧭 Camas–Washougal Makerspace · Meeting Log
 
 Central coordination record for the 6–8 week pilot phase.  
-Captures meetings, decisions, friction points, and next actions as you and Dan validate the makerspace concept.
+Captures meetings, decisions, friction points, and next actions.
+---
+## 🗓️ Summary — Nov 11, 2025
+
+**Key Decisions**
+- Karin takes lead on Makerspace.  
+- Start outreach.
+- 
 
 ---
 
